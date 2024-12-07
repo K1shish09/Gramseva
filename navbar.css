@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center items vertically */
+    padding: 15px 30px; /* Top-bottom and left-right padding */
+    background: linear-gradient(45deg, #2a7a2d, #3ca471); /* Gradient background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo img {
+    height: 50px; /* Set logo height */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between nav items */
+    margin-left: auto; /* Push nav links to the right */
+}
+
+.nav-links li {
+    position: relative; /* Position relative for hover effects */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-weight: 600; /* Bold text */
+    padding: 10px 15px; /* Padding around the text */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.nav-links a:hover {
+    color: #ffcb05; /* Change color on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+}

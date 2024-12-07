@@ -1,0 +1,353 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center items vertically */
+    padding: 15px 30px; /* Top-bottom and left-right padding */
+    background: linear-gradient(45deg, #2a7a2d, #3ca471); /* Gradient background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo img {
+    height: 50px;
+	border-radius: 50%; /* Set logo height */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between nav items */
+    margin-left: auto; /* Push nav links to the right */
+}
+
+.nav-links li {
+    position: relative; /* Position relative for hover effects */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-weight: 600; /* Bold text */
+    padding: 10px 15px; /* Padding around the text */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.nav-links a:hover {
+    color: #ffcb05; /* Change color on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+
+/*--cONTACT--*/
+.contact-header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 30px;
+}
+
+.contact-header h1 {
+    font-size: 42px;
+    color: white;
+}
+
+.contact-header p {
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+
+/* Contact Us Section */
+.contact-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contact Information Section */
+.contact-details {
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: #f8f9fa; /* Light neutral background */
+}
+
+.info-box {
+    background-color: #ffffff; /* White card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow for card */
+    text-align: center;
+    width: 280px; /* Card width */
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.info-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slight shadow on hover */
+}
+
+.info-box h3 {
+    font-size: 18px;
+    color: #4CAF50; /* Green accent for headings */
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    color: #555; /* Dark text for readability */
+    margin: 5px 0;
+}
+
+.info-box a {
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.info-box a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Icons in Contact Info */
+.info-icon {
+    font-size: 28px;
+    color: #4CAF50; /* Green accent for icons */
+    margin-bottom: 10px;
+}
+
+/* Flexbox for spacing and alignment */
+.contact-info-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Send Us a Message Form */
+.hyy{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #45a049;
+}
+.contact-form {
+    background-color: #f8f9fa; /* Subtle light gray background */
+    padding: 26px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    max-width: 500px;
+    margin: 30px auto; /* Centering the form */
+}
+
+.contact-form h2 {
+    font-size: 24px; /* Decreased font size */
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600; /* Slightly bold for emphasis */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Reduced margin for compact form */
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 94%;
+    padding: 12px;
+    border: 1px solid #ccc; /* Soft border */
+    border-radius: 6px;
+    background-color: #fff; /* White background */
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #4CAF50; /* Green focus border */
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.3); /* Soft green shadow */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Subtle green for the button */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-2px); /* Small lift on hover */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background: linear-gradient(45deg, #1e7c3e, #3ca471);
+    color: white;
+    padding: 40px 0;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex-basis: 23%;
+    margin: 20px 0;
+}
+
+.footer-section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 15px;
+    line-height: 1.8;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ffcb05;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 400;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcb05;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer-section form {
+    display: flex;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 70%;
+    font-size: 14px;
+}
+
+.footer-section button {
+    padding: 10px;
+    border: none;
+    background-color: #ffcb05;
+    color: #333;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+
+.footer-section button:hover {
+    background-color: #ffd93b;
+}
+
+
+
+.footer-section .social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+    color: white;
+    background-color: #166c33;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.footer-section .social-icons {
+    display: flex;
+    justify-content: start; /* Align icons to the left */
+    gap: 20px; /* Add a controlled gap between icons */
+    margin-top: 10px;
+}
+
+.footer-section .social-icons a {
+    width: 25px; /* Adjust the icon size */
+    height: 25px;
+    padding: 0; /* Remove unnecessary padding */
+}
+
+.footer-section .social-icons img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.footer-section .social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+    .contact-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info-box {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

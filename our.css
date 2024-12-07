@@ -1,0 +1,261 @@
+/* Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f9fc, #e3f2f9);
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #4CAF50;
+    width: 100%;
+    position: fixed; /* Keeps the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 40px; /* Smaller logo size */
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 15px; /* Reduced margin between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s, transform 0.3s; /* Added transform for hover effect */
+}
+
+.nav-links a:hover {
+    color: #333;
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Add padding to the top of the body content so it doesn't overlap with the fixed navbar */
+body {
+    padding-top: 60px; /* Adjust depending on navbar height */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide navbar links on smaller screens */
+    }
+
+    /* You can add a hamburger menu here if needed */
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+	margin-top: 20px;
+	padding-top: 50px;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4CAF50;
+}
+
+.header p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+}
+
+/* Statistics Section */
+.stats-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.stat-card {
+    background: linear-gradient(145deg, #4CAF50, #66bb6a);
+    color: white;
+    border-radius: 15px;
+    padding: 30px 40px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.stat-icon {
+    font-size: 36px;
+}
+
+.stat-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f0f7f9;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Owner Section */
+.owner-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin-bottom: 50px;
+    max-width: 1200px;
+}
+
+.owner-info {
+    text-align: left;
+    max-width: 60%;
+}
+
+.owner-title {
+    color: #4CAF50;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.owner-name {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.owner-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-btn {
+    padding: 12px 30px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+}
+
+.contact-btn:hover {
+    background: #388E3C;
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.owner-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #4CAF50;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Qualifications Section */
+.qualification-section {
+    background: #f9fafb;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-bottom: 40px;
+}
+
+.qual-title {
+    color: #4CAF50;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border-left: 5px solid #4CAF50;
+    padding-left: 15px;
+}
+
+.qual-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.qual-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qual-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.qual-icon {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.qual-info h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.qual-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}

@@ -1,0 +1,129 @@
+<section class="best-sellers">
+    <h2>Discover Our Best Sellers</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="images/product4.webp" alt="Larvi Claim Insecticide">
+            <h3><span class="icon">🌿</span> Larvi Claim</h3>
+            <p>Insecticide</p>
+            <a href="#" class="btn">View Product</a>
+        </div>
+        <div class="card">
+            <img src="images/product3.webp" alt="Azoteb Fungicide">
+            <h3><span class="icon">🍄</span> Azoteb</h3>
+            <p>Fungicide</p>
+            <a href="#" class="btn">View Product</a>
+        </div>
+        <div class="card">
+            <img src="images/product2.webp" alt="Agri-Gel Herbicide">
+            <h3><span class="icon">🌱</span> Agri-Gel</h3>
+            <p>Herbicide</p>
+            <a href="#" class="btn">View Product</a>
+        </div>
+        <div class="card">
+            <img src="images/product1.webp" alt="Caltazole PGR">
+            <h3><span class="icon">🌾</span> Caltazole</h3>
+            <p>PGR</p>
+            <a href="#" class="btn">View Product</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Best Sellers Section */
+    .best-sellers {
+        padding: 40px 20px;
+        background-image: url('images/soil-texture.jpg'); /* Earthy background */
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+    }
+
+    .best-sellers h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        font-weight: 600;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+        justify-items: center;
+        margin-top: 20px;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px); /* Blurred background */
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        font-weight: bold;
+        color: #4CAF50; /* Green for agriculture theme */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card h3 .icon {
+        margin-right: 10px;
+    }
+
+    .card p {
+        margin-bottom: 15px;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        background-color: #2d9cdb;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #1a7bb6;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+        .best-sellers h2 {
+            font-size: 1.6rem;
+        }
+
+        .card-container {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .card img {
+            height: 200px;
+        }
+    }
+</style>

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background: linear-gradient(45deg, #1e7c3e, #3ca471);
+    color: white;
+    padding: 40px 0;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex-basis: 23%;
+    margin: 20px 0;
+}
+
+.footer-section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 15px;
+    line-height: 1.8;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ffcb05;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 400;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcb05;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer-section form {
+    display: flex;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 70%;
+    font-size: 14px;
+}
+
+.footer-section button {
+    padding: 10px;
+    border: none;
+    background-color: #ffcb05;
+    color: #333;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+
+.footer-section button:hover {
+    background-color: #ffd93b;
+}
+
+
+
+.footer-section .social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+    color: white;
+    background-color: #166c33;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.footer-section .social-icons {
+    display: flex;
+    justify-content: start; /* Align icons to the left */
+    gap: 20px; /* Add a controlled gap between icons */
+    margin-top: 10px;
+}
+
+.footer-section .social-icons a {
+    width: 25px; /* Adjust the icon size */
+    height: 25px;
+    padding: 0; /* Remove unnecessary padding */
+}
+
+.footer-section .social-icons img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.footer-section .social-icons img:hover {
+    transform: scale(1.2);
+}
+

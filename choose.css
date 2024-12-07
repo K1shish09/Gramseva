@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.content-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.main-hero-section {
+    background: linear-gradient(135deg, #2a7a2d 30%, #3cb371 100%);
+    padding: 60px 0;
+    color: #fff;
+}
+
+.main-hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-hero-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.main-hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.main-hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.main-hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.main-hero-image img {
+    max-width: 80%; /* Adjust this value to increase or decrease image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Keep the border radius */
+}
+
+/* Products Section */
+.products-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Row for two cards */
+.services-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Card styling */
+.service-card {
+    background: #f7f9fa;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px; /* Adjust padding */
+    width: calc(50% - 10px); /* Two cards per row with space between */
+    margin: 0 5px 20px; /* Set left/right margin for space between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #2a7a2d; /* Green hover effect */
+    color: #fff; /* Change text color on hover */
+}
+
+.service-card h3 {
+    font-size: 1.5rem; /* Font size for heading */
+    color: #2a7a2d;
+    margin: 10px 0; /* Adjusted margin */
+}
+
+.service-card p {
+    font-size: 0.9rem; /* Font size for paragraph */
+    color: #555;
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+    color: #fff; /* Change text color to white on hover */
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px; /* Space below icons */
+}
+
+/* Additional Products Section */
+.products-section {
+    background-color: #f0f5f1;
+    padding: 60px 0;
+}
+
+.subheading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2a7a2d;
+    margin-bottom: 40px;
+}
+
+.product-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-images img {
+    width: 23%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .service-card {
+        width: calc(50% - 10px); /* Adjust width for medium screens */
+    }
+
+    .main-hero-content {
+        flex-direction: column;
+    }
+
+    .main-hero-text {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main-hero-image {
+        text-align: center;
+    }
+
+    .product-images img {
+        width: 48%; /* Adjust product image size */
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%; /* Stack cards vertically on small screens */
+    }
+
+    .product-images img {
+        width: 20%;
+    }
+}

@@ -1,0 +1,1016 @@
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+  }
+  
+ 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav links */
+  align-items: center; /* Center items vertically */
+  padding: 15px 30px; /* Top-bottom and left-right padding */
+  background: linear-gradient(45deg, #2a7a2d, #3ca471); /* Gradient background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo img {
+  height: 50px;
+border-radius: 50%; /* Set logo height */
+}
+
+.nav-links {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Flexbox for horizontal layout */
+  gap: 20px; /* Space between nav items */
+  margin-left: auto; /* Push nav links to the right */
+}
+
+.nav-links li {
+  position: relative; /* Position relative for hover effects */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+  font-weight: 600; /* Bold text */
+  padding: 10px 15px; /* Padding around the text */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.nav-links a:hover {
+  color: #ffcb05; /* Change color on hover */
+  transform: translateY(-2px); /* Slight upward movement */
+}
+
+
+/* Carousel styling */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    height: 500px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+
+
+/* Carousel controls */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Indicators */
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-indicators button.active {
+    background-color: #18bc9c;
+}
+ 
+  .hero {
+	background: url('farmer.webp') no-repeat center center/cover;
+	padding: 100px 20px;
+	text-align: center;
+	color: white;
+	position: relative;
+  }
+  
+  .hero:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 0;
+  background-image: url(images/carosel.jpeg);
+  height: 550px;
+  
+  }
+  
+  .hero-text, .hero-banner {
+	position: relative;
+	z-index: 1;
+  }
+  
+  .hero h1 {
+	font-size: 3.5em;
+	font-weight: bold;
+	color: #ffcc00;
+  }
+  
+  .hero h2, .hero h3, .hero p {
+	font-size: 1.6em;
+	margin: 10px 0;
+  }
+  .section-title {
+    font-size: 5cap;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.product-showcase {
+    text-align: center;
+}
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 290px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.product-item h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-category {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.product-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.product-btn:hover {
+    background-color: #218838;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+  
+  footer {
+	background-color: #2e7d32;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	font-size: 1em;
+  }
+  
+  footer p {
+	margin: 0;
+  }
+  
+  /* Animation for Navbar */
+  @keyframes fadeInDown {
+	from {
+	  opacity: 0;
+	  transform: translateY(-20px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  .navbar ul li {
+	animation: fadeInDown 1s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  .hero-text:hover h1 {
+	color: #ff9800;
+	transform: scale(1.05);
+	transition: transform 0.3s, color 0.3s;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.products-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f0f0f0; /* Light background for the section */
+}
+
+.product {
+    width: 30%; /* Make each product section take up one third of the width */
+    background-color: #2e7d32; /* Green for pesticide and fungicide */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Space between products */
+    transition: transform 0.3s ease;
+}
+
+.product h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:#FFEB3B;
+}
+
+.product p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.product.grey-background {
+    background-color: #FFEB3B; /* Grey for PGR section */
+}
+
+.product h3 {
+    font-size: 1.3em;
+    margin-top: 15px;
+    color: #FFEB3B; /* Highlight for Plant Growth Regulators heading */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Subtle zoom-in effect on hover */
+}
+
+@media (max-width: 768px) {
+    .products-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product {
+        width: 100%; /* Make product sections stack vertically on small screens */
+        margin-bottom: 20px;
+    }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container img {
+  border-radius: 5px;
+  max-width: 390%;
+  height: 322px;
+}
+
+.text-content {
+  max-width: 600px;
+  margin-left: 20px;
+}
+
+.text-content h2 {
+  color: #006400;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.gst-info {
+  background-color: #e7f5e9;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.gst-info span {
+  font-weight: bold;
+  color: #228B22;
+}
+
+  .text-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-content ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.text-content ul li::before {
+    content: '✔️';
+    margin-right: 10px;
+    color: #006400;
+}
+
+.highlight {
+    color: #006400;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #1c701c;
+}
+/* Speciality*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.stats-section {
+  background-color: #006400;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+
+/* Stats Section */
+.stats-section {
+  background-color: #f5f5f5;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stat {
+  background-color:green;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 25%;
+  margin: 1rem;
+  box-shadow: 0 4px 8p white(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color:white;
+
+
+}
+.icon{
+  color: white;
+}
+
+.stat h3{
+  color: white;
+}
+
+.services-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 18px rgba(236, 230, 230, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.services-header h2 {
+  color: #006400;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.services-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.services-header p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.service-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.service-card {
+  background-color: #e7f5e9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #006400;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #006400;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #228B22;
+}
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.content-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.main-hero-section {
+  background: linear-gradient(135deg, #2a7a2d 30%, #3cb371 100%);
+  padding: 60px 0;
+  color: #fff;
+}
+
+.main-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-hero-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.main-hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.main-hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.main-hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.main-hero-image img {
+  max-width: 80%; /* Adjust this value to increase or decrease image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Keep the border radius */
+}
+
+/* Products Section */
+.products-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.services-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row for two cards */
+.services-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+/* Card styling */
+.service-card {
+  background: #f7f9fa;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px; /* Adjust padding */
+  width: calc(50% - 10px); /* Two cards per row with space between */
+  margin: 0 5px 20px; /* Set left/right margin for space between cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effects for cards */
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background-color: #2a7a2d; /* Green hover effect */
+  color: #fff; /* Change text color on hover */
+}
+
+.service-card h3 {
+  font-size: 1.5rem; /* Font size for heading */
+  color: #2a7a2d;
+  margin: 10px 0; /* Adjusted margin */
+}
+
+.service-card p {
+  font-size: 0.9rem; /* Font size for paragraph */
+  color: #555;
+}
+
+/* Change text color on hover */
+.service-card:hover h3,
+.service-card:hover p {
+  color: #fff; /* Change text color to white on hover */
+}
+
+/* Icon styling */
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px; /* Space below icons */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .service-card {
+    width: calc(100% - 10px); /* Full width on smaller screens */
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer {
+  background: linear-gradient(45deg, #1e7c3e, #3ca471);
+  color: white;
+  padding: 40px 0;
+  font-weight: 300;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex-basis: 23%;
+  margin: 20px 0;
+}
+
+.footer-section h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 15px;
+  line-height: 1.8;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ffcb05;
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 400;
+}
+
+.footer-section ul li a:hover {
+  color: #ffcb05;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.footer-section form {
+  display: flex;
+}
+
+.footer-section input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 70%;
+  font-size: 14px;
+}
+
+.footer-section button {
+  padding: 10px;
+  border: none;
+  background-color: #ffcb05;
+  color: #333;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.footer-section button:hover {
+  background-color: #ffd93b;
+}
+
+.footer-section .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom-text {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+  color: white;
+  background-color: #166c33;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+.footer-section .social-icons {
+  display: flex;
+  justify-content: start; /* Align icons to the left */
+  gap: 20px; /* Add a controlled gap between icons */
+  margin-top: 10px;
+}
+
+.footer-section .social-icons a {
+  width: 25px; /* Adjust the icon size */
+  height: 25px;
+  padding: 0; /* Remove unnecessary padding */
+}
+
+.footer-section .social-icons img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.footer-section .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.best-sellers {
+  padding: 40px 20px;
+  background-image: url('images/soil-texture.jpg'); /* Earthy background */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.best-sellers h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 70px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px); /* Blurred background */
+  border-radius: 10px;
+  margin-left: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+  padding: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #4CAF50; /* Green for agriculture theme */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h3 .icon {
+  margin-right: 10px;
+}
+
+.card p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: #2d9cdb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #1a7bb6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .best-sellers h2 {
+      font-size: 1.6rem;
+  }
+
+  .card-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+  }
+
+  .card img {
+      height: 200px;
+  }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .service-card {
+      width: calc(50% - 10px); /* Adjust width for medium screens */
+  }
+
+  .main-hero-content {
+      flex-direction: column;
+  }
+
+  .main-hero-text {
+      padding-right: 0;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .main-hero-image {
+      text-align: center;
+  }
+
+  .product-images img {
+      width: 48%; /* Adjust product image size */
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+      width: 100%; /* Stack cards vertically on small screens */
+  }
+
+  .product-images img {
+      width: 20%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .stats-container {
+      flex-direction: column;
+  }
+
+  .service-grid {
+      flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+	.navbar ul {
+	  flex-direction: column;
+	}
+  
+	.hero {
+	  padding: 50px 10px;
+	}
+  
+	.hero h1 {
+	  font-size: 2.5em;
+	}
+  
+	.hero h2, .hero h3, .hero p {
+	  font-size: 1.2em;
+	}
+  }
+  
+}

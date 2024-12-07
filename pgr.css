@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid green; /* Green border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    background-color: #f7f9fc;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.product-image img {
+    width: 100px; /* Fixed size for uniform images */
+    height: 150px; /* Fixed size for uniform images */
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.product-content {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.product-content h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.product-content .ingredient {
+    font-size: 14px;
+    color: #00796b;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-content .description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.product-details {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-details strong {
+    color: #333;
+}
+
+.buy-now {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #004d40;
+}
